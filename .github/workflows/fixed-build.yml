@@ -1,0 +1,9 @@
+name: Fixed octagram build
+on:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    uses: ./.github/workflows/windows-build.yml
+    with:
+      rime_plugins: fangquinlan/librime-lua@pin-1131 fangquinlan/librime-octagram@fix-gram-encoding-multibyte-shift fangquinlan/librime-predict@pin-1131

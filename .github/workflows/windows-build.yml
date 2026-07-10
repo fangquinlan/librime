@@ -24,6 +24,7 @@ jobs:
       boost_version: 1.89.0
       BOOST_ROOT: ${{ github.workspace }}\deps\boost-1.89.0
       RIME_PLUGINS: ${{ inputs.rime_plugins }}
+      CMAKE_POLICY_VERSION_MINIMUM: 3.5
 
     steps:
       - name: Checkout last commit
